@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">MyPortfolio</h1>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a id="hireBtn" class="btn hire-btn" href="https://wa.me/923408938918?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer">Get Hired</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h2>Mudassar Hanif</h2>
+        <p class="subtitle">Beginner Programmer | Future Web Developer</p>
+        <p class="description">
+          I am learning programming and building projects to improve my skills.
+          This is my first portfolio website.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a class="btn secondary" href="https://wa.me/923408938918?text=Hello%2C%20I%20would%20like%20to%20contact%20you%20about%20a%20project." target="_blank" rel="noopener noreferrer">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar">👨‍💻</div>
+        <h3>Ready to Build</h3>
+        <p>I create clean and simple websites using HTML, CSS and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        I am a passionate beginner programmer. I enjoy learning how websites work
+        and I practice every day to become a professional developer.
+      </p>
+    </div>
+  </section>
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Git (Learning)</div>
+        <div class="skill-card">Problem Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A clean personal website to introduce myself and show my work.</p>
+        </div>
+        <div class="project-card wordpress-card">
+          <h3>WordPress Theme — CustomBlog</h3>
+          <p>Custom theme built with responsive templates, ACF integration and lightweight CSS.</p>
+        </div>
+        <div class="project-card">
+          <h3>To-Do App</h3>
+          <p>A small task manager made while learning JavaScript basics.</p>
+        </div>
+        <div class="project-card">
+          <h3>Calculator</h3>
+          <p>A simple calculator project for practicing logic and UI design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wordpress" class="section alt">
+    <div class="container">
+      <h2 class="section-title">WordPress Work</h2>
+      <p class="section-text">As a WordPress front-end developer I build custom themes, block patterns and integrate page builders. Recent work includes theme development, WooCommerce storefronts and performance optimizations.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h4>Theme Development</h4>
+          <p>Custom, accessible and responsive themes using PHP, WP Templates and the Block Editor.</p>
+        </div>
+        <div class="service-card">
+          <h4>Gutenberg / Blocks</h4>
+          <p>Custom block development and block patterns for repeatable layouts.</p>
+        </div>
+        <div class="service-card">
+          <h4>WooCommerce</h4>
+          <p>Storefront customization and WooCommerce template overrides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-text">Want to work with me or say hello?</p>
+      <div class="contact-box">
+        <p><strong>Email:</strong>rajamudassar918@gmail.com</p>
+        <p><strong>Location:</strong> Karachi, Sindh Pakistan</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
+          <a class="btn primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=rajamudassar918%40gmail.com&amp;su=Project%20Inquiry&amp;body=Hello%20Mudassar%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer">Send Email</a>
+          <a id="hireBtnContact" class="btn hire-btn" href="https://wa.me/923408938918?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noopener noreferrer">Get Hired</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mudassar. All rights reserved.</p>
+    </div>
+  </footer>
+</footer>
+
+  <!-- Resume modal (opens resume.pdf or resume.html) -->
+  <div id="resumeModal" class="modal" aria-hidden="true">
+    <div id="modalBackdrop" class="modal-backdrop" tabindex="-1"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Resume viewer">
+      <button id="closeResume" class="modal-close" aria-label="Close resume">Close ✕</button>
+      <div class="modal-body">
+        <iframe id="resumeFrame" src="" frameborder="0" title="Resume viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
